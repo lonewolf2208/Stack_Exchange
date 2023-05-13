@@ -61,6 +61,10 @@ class HomeFragment : Fragment() {
         }
         viewModel.searchquestions.observe(viewLifecycleOwner
         ) {
+//            if(it.items.size==0)
+//            {
+//                binding.imageView.visibility=View.VISIBLE
+//            }
             if (it != null)
             {
                 binding.progressBarSearch.visibility=View.INVISIBLE
@@ -85,7 +89,7 @@ class HomeFragment : Fragment() {
             }
             if(result is Resource.Error)
             {
-                Toast.makeText(requireContext(),result.error?.message.toString(), Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),"Check your Internet Connection", Toast.LENGTH_SHORT).show()
             }
         }
 
