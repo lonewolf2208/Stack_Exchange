@@ -3,6 +3,7 @@ package com.example.stackexchange.view
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -77,7 +78,11 @@ class HomeFragment : Fragment() {
                 adapter.submitList(result.data!![0].items)
                 adapter.onClickListener(object : QuestionsAdapter.ClickListener {
                     override fun OnClick(position: Int, tagPosition: Int) {
-                        binding.SearchContainer.setText(result.data[0].items[position].tags[tagPosition].toString())
+                        if(position!=-1 && !(position>=result.data[0].items.size)){
+                            Log.d("adpos",position.toString())
+                            Log.d("tagpos",tagPosition.toString())
+                            binding.SearchContainer.setText(result.data[0].items[position].tags[tagPosition].toString())
+                        }
                     }
                     override fun OnTextClick(position: Int) {
                         val bundle = Bundle()

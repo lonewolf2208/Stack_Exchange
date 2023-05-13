@@ -57,7 +57,7 @@ class QuestionsAdapter: ListAdapter<Item, QuestionsAdapter.QuestionViewHolder>(Q
                     this.chips.addView(chip)
                 }
                 this.chips.setOnCheckedChangeListener { group, checkedId ->
-                    clickListener?.OnClick(adapterPosition,checkedId)
+                     clickListener?.OnClick(adapterPosition,checkedId)
                 }
             }
         }
@@ -78,7 +78,7 @@ class QuestionsAdapter: ListAdapter<Item, QuestionsAdapter.QuestionViewHolder>(Q
 
     class QuestionComparator : DiffUtil.ItemCallback<Item>() {
         override fun areItemsTheSame(oldItem: Item, newItem: Item) =
-            oldItem==newItem
+            oldItem.question_id==newItem.question_id
 
         override fun areContentsTheSame(oldItem: Item, newItem: Item) =
             oldItem == newItem
