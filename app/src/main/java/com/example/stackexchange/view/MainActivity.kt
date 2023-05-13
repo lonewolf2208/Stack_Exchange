@@ -1,9 +1,9 @@
-package com.example.stackexchange
+package com.example.stackexchange.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stackexchange.R
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.HiltAndroidApp
 
 
 @AndroidEntryPoint

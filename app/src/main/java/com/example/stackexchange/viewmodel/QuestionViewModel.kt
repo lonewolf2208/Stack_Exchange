@@ -1,11 +1,10 @@
-package com.example.stackexchange
+package com.example.stackexchange.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.*
-import com.example.stackexchange.QuestionRepository
+import com.example.stackexchange.repository.QuestionRepository
 import com.example.stackexchange.model.HomeData.Home_Data
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

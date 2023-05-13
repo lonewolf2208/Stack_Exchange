@@ -1,7 +1,9 @@
-package com.example.stackexchange
+package com.example.stackexchange.network
 
 import android.app.Application
 import androidx.room.Room
+import com.example.stackexchange.model.StackDatabase
+import com.example.stackexchange.utils.RoomConvertors
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +25,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideCarListAPI(retrofit: Retrofit):StackApi =
+    fun provideCarListAPI(retrofit: Retrofit): StackApi =
         retrofit.create(StackApi::class.java)
 
     @Provides

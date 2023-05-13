@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.utils
 
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter

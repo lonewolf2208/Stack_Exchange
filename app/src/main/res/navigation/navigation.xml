@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.stackexchange.HomeFragment"
+        android:name="com.example.stackexchange.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/webView"
-        android:name="com.example.stackexchange.WebView"
+        android:name="com.example.stackexchange.view.WebView"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" />
 </navigation>

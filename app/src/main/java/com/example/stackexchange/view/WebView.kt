@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

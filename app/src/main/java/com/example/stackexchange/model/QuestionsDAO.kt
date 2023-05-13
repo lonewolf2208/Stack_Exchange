@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.model
 
 import androidx.room.Dao
 import androidx.room.Insert

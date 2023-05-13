@@ -1,6 +1,4 @@
-package com.example.stackexchange
-
-import com.example.stackexchange.model.HomeData.Home_Data
+package com.example.stackexchange.utils
 
 sealed class Resource <T> (
     val data : T ? =  null,

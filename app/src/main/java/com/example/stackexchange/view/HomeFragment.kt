@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.view
 
 import android.os.Bundle
 import android.text.Editable
@@ -11,6 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.stackexchange.viewmodel.QuestionViewModel
+import com.example.stackexchange.R
+import com.example.stackexchange.adapter.QuestionsAdapter
+import com.example.stackexchange.utils.Resource
 import com.example.stackexchange.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -57,7 +61,6 @@ class HomeFragment : Fragment() {
         }
         viewModel.searchquestions.observe(viewLifecycleOwner
         ) {
-//            Toast.makeText(requireContext(), "changed", Toast.LENGTH_SHORT).show()
             if (it != null)
             {
                 binding.progressBarSearch.visibility=View.INVISIBLE

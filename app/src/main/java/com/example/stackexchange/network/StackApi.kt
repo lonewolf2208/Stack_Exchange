@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.network
 
 import com.example.stackexchange.model.HomeData.Home_Data
 import retrofit2.Call

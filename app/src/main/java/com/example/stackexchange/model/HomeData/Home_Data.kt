@@ -1,7 +1,6 @@
 package com.example.stackexchange.model.HomeData
 
 import androidx.room.*
-import com.example.stackexchange.RoomConvertors
 
 
 @Entity(tableName = "questions")

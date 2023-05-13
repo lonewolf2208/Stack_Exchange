@@ -1,4 +1,4 @@
-package com.example.stackexchange
+package com.example.stackexchange.adapter
 
 import android.R
 import android.view.LayoutInflater
