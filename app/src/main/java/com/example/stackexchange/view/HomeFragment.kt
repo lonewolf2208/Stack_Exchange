@@ -78,11 +78,14 @@ class HomeFragment : Fragment() {
                 adapter.submitList(result.data!![0].items)
                 adapter.onClickListener(object : QuestionsAdapter.ClickListener {
                     override fun OnClick(position: Int, tagPosition: Int) {
-                        if(position!=-1 && !(position>=result.data[0].items.size)){
-                            Log.d("adpos",position.toString())
-                            Log.d("tagpos",tagPosition.toString())
+                        try {
                             binding.SearchContainer.setText(result.data[0].items[position].tags[tagPosition].toString())
                         }
+                        catch (e:Exception)
+                        {
+
+                        }
+
                     }
                     override fun OnTextClick(position: Int) {
                         val bundle = Bundle()
